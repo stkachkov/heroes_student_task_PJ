@@ -26,12 +26,12 @@ public class SuitableForAttackUnitsFinderImpl implements SuitableForAttackUnitsF
 
                 if (isLeftArmyTarget) { 
                     
-                    if (!occupiedYCoordsInColumn.contains(unit.getyCoordinate() - 1)) {
+                    if (!occupiedYCoordsInColumn.contains(unit.getyCoordinate() + 1)) {
                         suitableUnits.add(unit);
                     }
                 } else { 
                     
-                    if (!occupiedYCoordsInColumn.contains(unit.getyCoordinate() + 1)) {
+                    if (!occupiedYCoordsInColumn.contains(unit.getyCoordinate() - 1)) {
                         suitableUnits.add(unit);
                     }
                 }
